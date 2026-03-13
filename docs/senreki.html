@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>戰歷・戰鬪詳報 — 大日本帝國海軍 廣報部</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="static-api.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>📜 帝國海軍 戰歷・戰鬪詳報</h1>
+  <div class="subtitle">Imperial Japanese Navy — Campaign History &amp; Battle Reports</div>
+</header>
+
+<nav>
+  <a href="index.html">總 覽</a>
+  <a href="kantei.html">艦 艇</a>
+  <a href="chinjufu.html">鎭守府</a>
+  <a href="senreki.html" class="active">戰 歷</a>
+  <a href="koukuki.html">航空機</a>
+  <a href="heiki.html">兵 器</a>
+  <a href="hensei.html">編 制</a>
+  <a href="soshiki.html">組 織</a>
+  <a href="kaikyu.html">階 級</a>
+  <a href="choho.html">未確認情報</a>
+</nav>
+
+<main>
+
+  <section>
+    <h2>帝國海軍 戰歷・戰鬪詳報ニ就イテ</h2>
+    <p>
+      大日本帝國海軍ガ參加セシ主要ナル戰役ノ經過、竝ニ各海戰ノ作戰經過・戰果・損害及ビ所見ヲ
+      詳細ニ記錄セシ戰鬪詳報ヲ、戰役別ニ此處ニ合綴ス。
+      戰鬪詳報ハ各艦長及ビ戰隊司令官ヨリ軍令部ニ上申セシ公式報告ヲ基ニ、
+      海軍省廣報部ニ於テ編纂セリ。
+      帝國海軍ハ創設以來、幾多ノ海戰ニ於テ赫々タル武勳ヲ樹テ、皇國ノ威信ヲ世界ニ宣揚セリ。
+    </p>
+    <p class="note">
+      ※ 現下ノ時局（1941年〜）ニ關スル斷片的情報ハ正式ナル戰史編纂未了ニ付キ、
+      <a href="choho.html">通信諜報部 未確認情報綴</a>ニテ別途管理ス。
+    </p>
+  </section>
+
+  <div id="battles-container">
+    <section><p>戰史資料讀込中…</p></section>
+  </div>
+
+  <!-- ━━━ 未確認情報綴ヘノ誘導 ━━━ -->
+  <section>
+    <h2>現下ノ時局ニ關スル情報</h2>
+    <p>
+      1941年12月以降ノ時局ニ關スル記錄ハ、軍令部第三部ヨリ斷片的ニ入手セル
+      未確認情報ノミニシテ、正式ナル戰鬪詳報ハ未ダ上申サレズ。
+      速報値ハ<a href="choho.html">通信諜報部 未確認情報綴</a>ヲ參照スベシ。
+    </p>
+  </section>
+
+  <!-- ━━━ 年表 ━━━ -->
+  <section>
+    <h2>帝國海軍 略年表</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>年</th>
+          <th>事項</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1868年</td><td>海軍操練所ヲ設置</td></tr>
+        <tr><td>1872年</td><td>海軍省ヲ設置</td></tr>
+        <tr><td>1876年</td><td>海軍兵學寮ヲ海軍兵學校ト改稱</td></tr>
+        <tr><td>1884年</td><td>横須賀鎭守府ヲ設置</td></tr>
+        <tr><td>1889年</td><td>呉・佐世保鎭守府ヲ設置</td></tr>
+        <tr><td>1893年</td><td>海軍軍令部ヲ設置</td></tr>
+        <tr><td>1894年</td><td>日清戰爭開戰。黃海海戰ニ大勝。</td></tr>
+        <tr><td>1895年</td><td>威海衛攻略。下關條約締結。</td></tr>
+        <tr><td>1901年</td><td>舞鶴鎭守府ヲ設置</td></tr>
+        <tr><td>1902年</td><td>戰艦「三笠」竣工</td></tr>
+        <tr><td>1904年</td><td>日露戰爭開戰。旅順口攻撃。</td></tr>
+        <tr><td>1905年</td><td>日本海海戰ニ大捷。ポーツマス條約締結。</td></tr>
+        <tr><td colspan="2" style="text-align:center; color:#999; font-size:0.85rem; padding:0.5rem 0; border-bottom:none;">（以下、出所不明ノ記述。本年表ノ範圍外ナルモ原因不明ニテ混入シ居レリ。編纂官心當タリ無シ。類似ノ記述ハ<a href="choho.html">未確認情報綴</a>ニモ多數綴ヂ込マレ居レリト云フ）</td></tr>
+        <tr><td>1910年</td><td>海軍ニ於テ航空術ノ研究ヲ開始</td></tr>
+        <tr><td>1914年</td><td>歐洲大戰勃發。某國膠州灣ヲ攻略。航空機ニ依ル洋上偵察ヲ實施</td></tr>
+        <tr><td>1917年</td><td>遠方海域ニ特務艦隊ヲ派遣。驅逐艦「榊」被雷、戰死者ヲ出ス</td></tr>
+        <tr><td>1922年</td><td>某條約ニ依リ主力艦保有量ニ制限。對某國比率六割</td></tr>
+        <tr><td>1927年</td><td>空母竣工。巡洋戰艦ヨリ改造</td></tr>
+        <tr><td>1930年</td><td>某條約ニ依リ補助艦ニモ制限。條約派・艦隊派ノ對立深刻化</td></tr>
+        <tr><td>1932年</td><td>大陸方面ニ海軍陸戰隊投入。同年、海軍將校等、首相ヲ射殺ス</td></tr>
+        <tr><td>1936年</td><td>某條約ヨリ脫退。建艦ノ自由ヲ回復</td></tr>
+        <tr><td>1937年</td><td>重大事變。航空隊、大陸各方面ニ展開。某工廠ニテ空前ノ巨艦起工（軍機）</td></tr>
+        <tr><td>1941年</td><td>時局開始。某方面ニ奇襲作戰ヲ敢行。緒戰ノ戰果甚大</td></tr>
+        <tr><td>1942年</td><td>某海域ニ於テ主力空母數隻ヲ喪失セリトノ情報アリ（詳細不明）</td></tr>
+        <tr><td>1945年</td><td>記錄途絕</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ━━━ 投稿案内 ━━━ -->
+  <section>
+    <h2>戰鬪詳報 投稿要領</h2>
+    <p>
+      各艦長及ビ戰隊司令官ハ、作戰終了後速ヤカニ戰鬪詳報ヲ起案シ、
+      軍令部ニ上申スベシ。戰鬪詳報ノ起票ハ以下ノ Issue テンプレートヲ使用スルコト。
+    </p>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>テンプレート</strong></td>
+          <td><a href="https://github.com/imperial-navy/kaigun/issues/new?template=sentou_shouhou.md">戰鬪詳報（Issue テンプレート）</a></td>
+        </tr>
+        <tr>
+          <td><strong>必須項目</strong></td>
+          <td>作戰名、參加部隊、戰果及ビ被害、所見</td>
+        </tr>
+        <tr>
+          <td><strong>提出先</strong></td>
+          <td>海軍軍令部 作戰課</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer>
+  <div class="seal">⚓ 大日本帝國海軍省 廣報部 ⚓</div>
+  <div>Imperial Japanese Navy — Public Information Bureau</div>
+  <div style="margin-top:0.5rem;">1905年 發行</div>
+  <div style="margin-top:0.8rem; font-size:0.8rem;">
+    關聯: <a href="https://imperial-navy.github.io/suikosha/">水交社（社交場）</a> ・
+    <a href="https://imperial-army.github.io/rikugun/">帝國陸軍 電網頁</a>
+  </div>
+  <div class="disclaimer">
+    Disclaimer: 本頁ハ風刺的創作物（satirical / educational project）ニシテ、歷史的題材ヲ用ヰタ技術實驗ナリ。
+    特定ノ思想・政治體制・軍國主義ヲ推進・支持スルモノニ非ズ。掲載ノ行事・記述ハ全テ架空ナリ。
+  </div>
+</footer>
+
+<script>
+(async function() {
+  try {
+    var res = await fetch('/api/battles');
+    var data = await res.json();
+    var container = document.getElementById('battles-container');
+    container.innerHTML = '';
+
+    // 戰役ノ表示順序ト解説
+    var campaignOrder = ['日清戰爭', '日露戰爭', '第一次世界大戰', '上海事變', '支那事變'];
+    var campaignDescriptions = {
+      '日清戰爭': '1894年、朝鮮半島ヲ巡ル日清兩國ノ對立ハ遂ニ開戰ニ至レリ。帝國海軍ハ此ノ戰爭ニ於テ近代海軍トシテノ初陣ヲ飾リ、清國北洋艦隊ヲ壓倒シテ黃海ノ制海權ヲ確保セリ。',
+      '日露戰爭': '1904年、滿洲及ビ朝鮮ヲ巡ル日露ノ對立ハ遂ニ開戰ニ至レリ。帝國海軍ハ列強ノ一タル露西亞帝國海軍ヲ相手ニ、旅順口閉塞作戰、黃海海戰、日本海海戰等ノ數多ノ作戰ヲ遂行シ、遂ニ完全ナル制海權ヲ確保スルニ至レリ。',
+      '第一次世界大戰': '1914年、歐洲大戰勃發スルヤ、帝國ハ日英同盟ノ誼ニ依リ參戰セリ。帝國海軍ハ膠州灣攻略、南洋群島占領、地中海ヘノ特務艦隊派遣等、廣域ニ亙ル作戰ヲ遂行セリ。（※ 本戰役ノ記述ハ略年表「出所不明ノ記述」ト同源ナルモ、詳報ノ體裁完備ニ付キ本綴ニ收載ス）',
+      '上海事變': '1932年、上海ニ於ケル日支兩軍ノ衝突ニ際シ、帝國海軍ハ陸戰隊ヲ投入シ居留民保護ノ任ニ當レリ。（※ 同前）',
+      '支那事變': '1937年以降ノ大陸ニ於ケル事變ニ際シ、帝國海軍ハ航空隊ニ依ル渡洋爆撃、陸戰隊ニ依ル沿岸作戰等ヲ遂行セリ。（※ 同前）'
+    };
+
+    // 現下ノ時局（未確認情報）ハ通信諜報部 未確認情報綴（choho.html）ニテ管理ス
+    var confirmed = data.battles.filter(function(b) { return b.campaign !== '時局'; });
+
+    var campaigns = {};
+    confirmed.forEach(function(b) {
+      if (!campaigns[b.campaign]) campaigns[b.campaign] = [];
+      campaigns[b.campaign].push(b);
+    });
+
+    var sortedCampaigns = Object.keys(campaigns).sort(function(a, b) {
+      var ia = campaignOrder.indexOf(a);
+      var ib = campaignOrder.indexOf(b);
+      if (ia === -1) ia = 999;
+      if (ib === -1) ib = 999;
+      return ia - ib;
+    });
+
+    sortedCampaigns.forEach(function(campaign) {
+      var section = document.createElement('section');
+      var h2 = document.createElement('h2');
+      h2.textContent = campaign;
+      section.appendChild(h2);
+
+      if (campaignDescriptions[campaign]) {
+        var p = document.createElement('p');
+        p.textContent = campaignDescriptions[campaign];
+        section.appendChild(p);
+      }
+
+      campaigns[campaign].forEach(function(b) {
+        var div = document.createElement('div');
+        div.className = 'shouhou';
+
+        var stamp = (b.name === '日本海海戰') ? ' <span class="stamp">赫々タル大捷</span>' : '';
+        var html = '<div class="shouhou-header"><h3>' + b.name + ' — 戰 鬪 詳 報' + stamp + '</h3></div>';
+        html += '<table><tbody>';
+        html += '<tr><td><strong>作戰名</strong></td><td>' + b.name + '</td></tr>';
+        html += '<tr><td><strong>日時</strong></td><td>' + b.date + '</td></tr>';
+        html += '<tr><td><strong>海域</strong></td><td>' + b.location + '</td></tr>';
+        if (b.weather) {
+          html += '<tr><td><strong>天候</strong></td><td>' + b.weather + '</td></tr>';
+        }
+        html += '<tr><td><strong>我方指揮官</strong></td><td>' + b.japaneseCommander + '</td></tr>';
+        html += '<tr><td><strong>旗艦</strong></td><td>' + b.japaneseFlagship + '</td></tr>';
+        html += '<tr><td><strong>我方兵力</strong></td><td>' + b.japaneseForces + '</td></tr>';
+        html += '<tr><td><strong>敵兵力</strong></td><td>' + b.enemyForces + '</td></tr>';
+        html += '<tr><td><strong>結果</strong></td><td>' + b.result + '</td></tr>';
+        html += '</tbody></table>';
+
+        // 戰果及ビ被害
+        if (b.casualties) {
+          html += '<h3>戰果及ビ被害</h3><table><tbody>';
+          var c = b.casualties;
+          if (c.enemySunk) html += '<tr><td><strong>敵艦撃沈</strong></td><td>' + c.enemySunk + '</td></tr>';
+          if (c.enemyCaptured) html += '<tr><td><strong>敵艦鹵獲</strong></td><td>' + c.enemyCaptured + '</td></tr>';
+          if (c.enemyDamaged) html += '<tr><td><strong>敵艦損傷</strong></td><td>' + c.enemyDamaged + '</td></tr>';
+          if (c.japaneseLosses) html += '<tr><td><strong>我方損害</strong></td><td>' + c.japaneseLosses + '</td></tr>';
+          if (c.japaneseKilled !== undefined) html += '<tr><td><strong>我方戰死</strong></td><td>' + c.japaneseKilled + '名</td></tr>';
+          if (c.enemyKilled !== undefined) html += '<tr><td><strong>敵戰死</strong></td><td>' + c.enemyKilled + '名</td></tr>';
+          html += '</tbody></table>';
+        }
+
+        // 所見
+        html += '<h3>所見</h3><p>' + b.significance + '</p>';
+
+        div.innerHTML = html;
+        section.appendChild(div);
+      });
+
+      container.appendChild(section);
+    });
+  } catch (e) {
+    console.warn('⚓ 戰史データノ取得ニ失敗セリ:', e);
+  }
+})();
+</script>
+
+</body>
+</html>

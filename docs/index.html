@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大日本帝國海軍 — 廣報部</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="static-api.js"></script>
+</head>
+<body>
+
+<header class="hero-home">
+  <h1>⚓ 大日本帝國海軍 廣報部</h1>
+  <div class="subtitle">Imperial Japanese Navy — Public Information Bureau</div>
+  <div class="catch">皇國ノ興廢此ノ一戰ニ在リ</div>
+  <div class="gakutai">
+    <button id="gakutai-gunkan" type="button" data-kyoku="gunkan">♪ 行進曲「軍艦」奏樂</button>
+    <div class="soekaki">海軍軍樂隊 ・ 瀬戸口藤吉 作曲（明治三十年）</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html" class="active">總 覽</a>
+  <a href="kantei.html">艦 艇</a>
+  <a href="chinjufu.html">鎭守府</a>
+  <a href="senreki.html">戰 歷</a>
+  <a href="koukuki.html">航空機</a>
+  <a href="heiki.html">兵 器</a>
+  <a href="hensei.html">編 制</a>
+  <a href="soshiki.html">組 織</a>
+  <a href="kaikyu.html">階 級</a>
+  <a href="choho.html">未確認情報</a>
+</nav>
+
+<main>
+
+  <!-- ━━━ 御訓示 ━━━ -->
+  <section>
+    <h2>御 訓 示</h2>
+    <blockquote>
+      皇國ノ興廢此ノ一戰ニ在リ、各員一層奮勵努力セヨ。
+    </blockquote>
+    <p>
+      本頁面ハ、大元帥陛下（<a href="https://github.com/imperial-household">@imperial-household</a> Organization Owner）ノ
+      御稜威ノ下ニ在ル大日本帝國海軍ガ、其ノ威容ト戰歷ヲ廣ク內外ニ宣揚スル爲ニ
+      海軍省廣報部ガ開設セシ公式廣報頁面ナリ。
+    </p>
+  </section>
+
+  <!-- ━━━ 組織概要 ━━━ -->
+  <section>
+    <h2>帝國海軍 組織概要</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>機關名</th>
+          <th>所掌</th>
+          <th>リンク</th>
+        </tr>
+      </thead>
+      <tbody id="org-table-body">
+        <tr><td colspan="3">讀込中…</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ━━━ 最新情報 ━━━ -->
+  <section>
+    <h2>最新達示・布告</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>日附</th>
+          <th>發令元</th>
+          <th>內容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1905年5月</td>
+          <td>聯合艦隊司令長官</td>
+          <td>日本海海戰ニ於ケル大捷ヲ奏上ス</td>
+        </tr>
+        <tr>
+          <td>1905年5月</td>
+          <td>聯合艦隊司令長官</td>
+          <td>「皇國ノ興廢此ノ一戰ニ在リ」全艦隊ニ打電。Z旗信號揚ゲラル</td>
+        </tr>
+        <tr>
+          <td>1905年3月</td>
+          <td>滿洲軍</td>
+          <td>奉天會戰ニ於テ陸軍大捷。海軍モ協力ス</td>
+        </tr>
+        <tr>
+          <td>1905年1月</td>
+          <td>海軍省</td>
+          <td>旅順口要塞陷落。海軍陸戰隊ノ支援射擊效果甲ナリ</td>
+        </tr>
+        <tr>
+          <td>1904年8月</td>
+          <td>聯合艦隊</td>
+          <td>黃海海戰ニ於テ敵主力艦隊ヲ撃破セリ</td>
+        </tr>
+        <tr>
+          <td>1904年2月</td>
+          <td>聯合艦隊</td>
+          <td>仁川沖海戰。旅順港外ノ露國艦隊ヲ奇襲ス</td>
+        </tr>
+        <tr>
+          <td>1904年2月</td>
+          <td>大本營</td>
+          <td>對露國宣戰之詔書。聯合艦隊出撃。「敷島ヨリ電信、天氣晴朗ナレドモ波高シ」</td>
+        </tr>
+        <tr>
+          <td>1903年12月</td>
+          <td>海軍省</td>
+          <td>戰艦「三笠」聯合艦隊旗艦ニ指定</td>
+        </tr>
+        <tr>
+          <td>1902年1月</td>
+          <td>外務省</td>
+          <td>日英同盟締結。英國海軍トノ結束ハ帝國海軍ノ國際的地位ヲ確固タラシム</td>
+        </tr>
+        <tr>
+          <td>1900年</td>
+          <td>海軍省</td>
+          <td>北清事變（義和團之亂）ニ於テ海軍陸戰隊派遣</td>
+        </tr>
+        <tr>
+          <td>1895年4月</td>
+          <td>大本營</td>
+          <td>下關條約締結。日清戰爭歸結。臺灣ヲ割讓サル</td>
+        </tr>
+        <tr>
+          <td>1894年9月</td>
+          <td>聯合艦隊</td>
+          <td>黃海海戰（日清）ニ於テ清國北洋艦隊ヲ撃破セリ</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ━━━ 部門案内 ━━━ -->
+  <section>
+    <h2>各頁面案内</h2>
+    <div class="chinjufu-grid">
+      <a href="kantei.html" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>⚓ 艦艇情報</h4>
+        <div class="desc">帝國海軍所屬ノ主要艦艇ノ要目・經歷ヲ閲覽ス</div>
+      </a>
+      <a href="chinjufu.html" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>🏯 鎭守府情報</h4>
+        <div class="desc">四大鎭守府及ビ要港部ノ概要ヲ閲覽ス</div>
+      </a>
+      <a href="senreki.html" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>📜 戰歷・戰鬪詳報</h4>
+        <div class="desc">主要戰役ノ經過及ビ各海戰ノ詳細ナル戰鬪報告ヲ閲覽ス</div>
+      </a>
+      <a href="hensei.html" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>🏴 編制・指揮系統</h4>
+        <div class="desc">開戰時ノ全艦隊編制及ビ指揮系統圖ヲ閲覽ス</div>
+      </a>
+      <a href="koukuki.html" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>✈ 航空機</h4>
+        <div class="desc">帝國海軍航空隊ノ使用スル航空機ノ要目ヲ閲覽ス</div>
+      </a>
+      <a href="heiki.html" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>💣 兵器</h4>
+        <div class="desc">主砲・魚雷・爆雷等ノ帝國海軍兵器ノ諸元ヲ閲覽ス</div>
+      </a>
+      <a href="soshiki.html" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>🏛 組織</h4>
+        <div class="desc">海軍省・軍令部以下各部門ノ編成ヲ閲覽ス</div>
+      </a>
+      <a href="kaikyu.html" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>🎖 階級表</h4>
+        <div class="desc">帝國海軍ノ官等・階級・兵科ヲ閲覽ス</div>
+      </a>
+      <a href="choho.html" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>📡 未確認情報綴</h4>
+        <div class="desc">通信諜報部ガ傍受セシ現下ノ時局ニ關スル未確認情報（軍機・穿鑿無用）</div>
+      </a>
+      <a href="https://imperial-navy.github.io/suikosha/" class="chinjufu-card" style="text-decoration:none;color:inherit;">
+        <h4>🥂 水交社（社交場）</h4>
+        <div class="desc">舞踏會・演奏會・水交パーラー。海軍將校ノ社交倶樂部（外部頁面）</div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="seal">⚓ 大日本帝國海軍省 廣報部 ⚓</div>
+  <div>Imperial Japanese Navy — Public Information Bureau</div>
+  <div style="margin-top:0.5rem;">1905年 發行</div>
+  <div style="margin-top:0.8rem; font-size:0.8rem;">
+    關聯: <a href="https://imperial-navy.github.io/suikosha/">水交社（社交場）</a> ・
+    <a href="https://imperial-army.github.io/rikugun/">帝國陸軍 電網頁</a>
+    <span style="opacity:0.7;">（對等ニシテ從屬セズ。時局ニ依リ已ムヲ得ズ連絡ス。頁面ハ聊カ古風ナルモ悪シカラズ）</span>
+  </div>
+  <div class="disclaimer">
+    Disclaimer: 本頁ハ風刺的創作物（satirical / educational project）ニシテ、歷史的題材ヲ用ヰタ技術實驗ナリ。
+    特定ノ思想・政治體制・軍國主義ヲ推進・支持スルモノニ非ズ。掲載ノ行事・記述ハ全テ架空ナリ。
+  </div>
+</footer>
+
+<script>
+(async function() {
+  try {
+    var res = await fetch('/api/organization');
+    var data = await res.json();
+    var tbody = document.getElementById('org-table-body');
+    tbody.innerHTML = '';
+    data.organizations.forEach(function(org) {
+      var tr = document.createElement('tr');
+      var links = [];
+      if (org.website) links.push('<a href="' + org.website + '">公式頁</a>');
+      if (org.repository) links.push('<a href="https://github.com/imperial-navy/' + org.repository + '">Repository</a>');
+      tr.innerHTML = '<td>' + org.name + '</td><td>' + org.role + '</td><td>' + (links.join(' ・ ') || '—') + '</td>';
+      tbody.appendChild(tr);
+    });
+  } catch (e) {
+    console.warn('⚓ 組織データノ取得ニ失敗セリ:', e);
+  }
+})();
+</script>
+
+
+<script>
+/* 軍樂隊 奏樂裝置 — Web Audio API ニ依ル奏樂。音源ファイルヲ要セズ、樂譜ヨリ直接發音ス。
+   曲目: 行進曲「軍艦」（瀬戸口藤吉 明治三十年） — 樂譜ハMIDI原譜ヨリ採譜（G長調・付點行進リズム） */
+(function () {
+  var NE = { C4: 261.63, D4: 293.66, E4: 329.63, F4: 349.23, G4: 392.0, A4: 440.0, B4: 493.88, C5: 523.25, D5: 587.33, 'D#5': 622.25, E5: 659.26, 'F#4': 369.99, 'F#5': 739.99, G5: 783.99 };
+
+  var KYOKUMOKU = {
+    gunkan: {
+      haku: 0.5, iro: 'koushin',
+      fu: [
+        // 序奏（喇叭ノ吹奏）
+        ['G4',1],['A4',1],['G4',0.5],['F#4',0.25],['G4',0.25],['C5',0.5],
+        ['E5',0.5],['D5',0.5],['D#5',0.5],['E5',0.5],['F#5',0.5],['G5',2],
+        // 一番　守ルモ攻ムルモ黑鐵ノ
+        ['D4',0.75],['B4',0.25],['B4',0.5],['B4',0.5],['B4',0.5],['C5',0.5],['B4',0.5],['A4',0.5],
+        ['A4',0.75],['G4',0.25],['A4',0.75],['B4',0.25],['A4',1],['R',1],
+        // 浮カベル城ゾ頼ミナル
+        ['D4',0.75],['A4',0.25],['A4',0.5],['A4',0.5],['A4',0.5],['B4',0.5],['A4',0.5],['G4',0.5],
+        ['G4',0.75],['D4',0.25],['G4',0.75],['A4',0.25],['B4',1],['R',1],
+        // 浮カベルソノ城日ノ本ノ
+        ['D4',0.75],['B4',0.25],['B4',0.5],['B4',0.5],['B4',0.5],['C5',0.5],['B4',0.5],['A4',0.5],
+        ['A4',0.75],['B4',0.25],['D5',0.5],['G4',0.5],['D5',1],['R',1],
+        // 皇國ノ四方ヲ守ルベシ
+        ['D5',0.75],['E5',0.25],['G5',0.5],['E5',0.5],['D5',0.75],['E5',0.25],['D5',0.5],['B4',0.5],
+        ['A4',0.5],['D5',0.5],['A4',0.5],['D5',0.5],['G4',0.5],['R',0.5],
+        // 眞鐵ノソノ艦日ノ本ニ
+        ['D4',0.75],['B4',0.25],['B4',0.5],['B4',0.5],['B4',0.5],['C5',0.5],['B4',0.5],['A4',0.5],
+        ['A4',0.75],['B4',0.25],['D5',0.5],['G4',0.5],['D5',1],['R',1],
+        // 仇ナス國ヲ攻メヨカシ
+        ['D5',0.75],['E5',0.25],['G5',0.5],['E5',0.5],['D5',0.75],['E5',0.25],['D5',0.5],['B4',0.5],
+        ['A4',0.5],['D5',0.5],['A4',0.5],['D5',0.5],['G4',0.5],['R',0.5],
+        // 二番　石炭ノ煙ハ大洋ノ
+        ['D4',0.75],['B4',0.25],['B4',0.5],['B4',0.5],['B4',0.5],['C5',0.5],['B4',0.5],['A4',0.5],
+        ['A4',0.75],['G4',0.25],['A4',0.75],['B4',0.25],['A4',1],['R',1],
+        // 龍カトバカリ靡クナリ
+        ['D4',0.75],['A4',0.25],['A4',0.5],['A4',0.5],['A4',0.5],['B4',0.5],['A4',0.5],['G4',0.5],
+        ['G4',0.75],['D4',0.25],['G4',0.75],['A4',0.25],['B4',1],['R',1],
+        // 彈撃ツ響キハ雷ノ
+        ['D4',0.75],['B4',0.25],['B4',0.5],['B4',0.5],['B4',0.5],['C5',0.5],['B4',0.5],['A4',0.5],
+        ['A4',0.75],['B4',0.25],['D5',0.5],['G4',0.5],['D5',1],['R',1],
+        // 聲カトバカリ響ムナリ
+        ['D5',0.75],['E5',0.25],['G5',0.5],['E5',0.5],['D5',0.75],['E5',0.25],['D5',0.5],['B4',0.5],
+        ['A4',0.5],['D5',0.5],['A4',0.5],['D5',0.5],['G4',0.5],['R',0.5],
+        // 萬里ノ波濤ヲ乘越エテ
+        ['D4',0.75],['B4',0.25],['B4',0.5],['B4',0.5],['B4',0.5],['C5',0.5],['B4',0.5],['A4',0.5],
+        ['A4',0.75],['B4',0.25],['D5',0.5],['G4',0.5],['D5',1],['R',1],
+        // 皇國ノ光輝カセ
+        ['D5',0.75],['E5',0.25],['G5',0.5],['E5',0.5],['D5',0.75],['E5',0.25],['D5',0.5],['B4',0.5],
+        ['A4',0.5],['D5',0.5],['A4',0.5],['D5',0.5],['G4',0.5],['R',0.5],
+        // 間奏（序奏ノ再現）
+        ['G4',1],['A4',1],['G4',0.5],['F#4',0.25],['G4',0.25],['C5',0.5],
+        ['E5',0.5],['D5',0.5],['D#5',0.5],['E5',0.5],['F#5',0.5],['G5',2],
+        // 一番反復　守ルモ攻ムルモ黑鐵ノ
+        ['D4',0.75],['B4',0.25],['B4',0.5],['B4',0.5],['B4',0.5],['C5',0.5],['B4',0.5],['A4',0.5],
+        ['A4',0.75],['G4',0.25],['A4',0.75],['B4',0.25],['A4',1],['R',1],
+        // 浮カベル城ゾ頼ミナル
+        ['D4',0.75],['A4',0.25],['A4',0.5],['A4',0.5],['A4',0.5],['B4',0.5],['A4',0.5],['G4',0.5],
+        ['G4',0.75],['D4',0.25],['G4',0.75],['A4',0.25],['B4',1],['R',1],
+        // 浮カベルソノ城日ノ本ノ
+        ['D4',0.75],['B4',0.25],['B4',0.5],['B4',0.5],['B4',0.5],['C5',0.5],['B4',0.5],['A4',0.5],
+        ['A4',0.75],['B4',0.25],['D5',0.5],['G4',0.5],['D5',1],['R',1],
+        // 皇國ノ四方ヲ守ルベシ
+        ['D5',0.75],['E5',0.25],['G5',0.5],['E5',0.5],['D5',0.75],['E5',0.25],['D5',0.5],['B4',0.5],
+        ['A4',0.5],['D5',0.5],['A4',0.5],['D5',0.5],['G4',0.5],['R',0.5],
+        // 眞鐵ノソノ艦日ノ本ニ
+        ['D4',0.75],['B4',0.25],['B4',0.5],['B4',0.5],['B4',0.5],['C5',0.5],['B4',0.5],['A4',0.5],
+        ['A4',0.75],['B4',0.25],['D5',0.5],['G4',0.5],['D5',1],['R',1],
+        // 仇ナス國ヲ攻メヨカシ
+        ['D5',0.75],['E5',0.25],['G5',0.5],['E5',0.5],['D5',0.75],['E5',0.25],['D5',0.5],['B4',0.5],
+        ['A4',0.5],['D5',0.5],['A4',0.5],['D5',0.5],['G4',3],['R',1]
+      ]
+    }
+  };
+
+  var soukyoku = null, owariId = null, imaBtn = null;
+  var btns = document.querySelectorAll('.gakutai button[data-kyoku]');
+  if (!btns.length) return;
+
+  function hassei(toki, shuuha, nagasa, iro) {
+    var tsuyosa = iro === 'koushin' ? 0.26 : 0.22;
+    var kire = iro === 'koushin' ? 0.85 : 1.0; // 行進曲ハ切レ良ク
+    [1, 2].forEach(function (baisu, i) {
+      var gen = soukyoku.createOscillator();
+      var otoryo = soukyoku.createGain();
+      gen.type = i === 0 ? (iro === 'koushin' ? 'square' : 'triangle') : 'sine';
+      gen.frequency.value = shuuha * baisu;
+      var mine = (i === 0 ? tsuyosa : 0.05) * (iro === 'koushin' && i === 0 ? 0.6 : 1);
+      var jitsu = nagasa * kire;
+      otoryo.gain.setValueAtTime(0.0001, toki);
+      otoryo.gain.linearRampToValueAtTime(mine, toki + 0.04);
+      otoryo.gain.setValueAtTime(mine, toki + Math.max(0.05, jitsu - 0.1));
+      otoryo.gain.linearRampToValueAtTime(0.0001, toki + jitsu);
+      gen.connect(otoryo).connect(soukyoku.destination);
+      gen.start(toki);
+      gen.stop(toki + jitsu + 0.05);
+    });
+  }
+
+  function sousou(btn) {
+    var kyoku = KYOKUMOKU[btn.getAttribute('data-kyoku')];
+    soukyoku = new (window.AudioContext || window.webkitAudioContext)();
+    var toki = soukyoku.currentTime + 0.15;
+    kyoku.fu.forEach(function (fu) {
+      var nagasa = fu[1] * kyoku.haku;
+      if (fu[0] !== 'R') hassei(toki, NE[fu[0]], nagasa, kyoku.iro);
+      toki += nagasa;
+    });
+    imaBtn = btn;
+    btn.classList.add('sousou');
+    btn.dataset.moto = btn.textContent;
+    btn.textContent = '■ 奏樂中';
+    owariId = setTimeout(teishi, (toki - soukyoku.currentTime + 0.5) * 1000);
+  }
+
+  function teishi() {
+    if (owariId) { clearTimeout(owariId); owariId = null; }
+    if (soukyoku) { soukyoku.close(); soukyoku = null; }
+    if (imaBtn) {
+      imaBtn.classList.remove('sousou');
+      imaBtn.textContent = imaBtn.dataset.moto;
+      imaBtn = null;
+    }
+  }
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var onaji = imaBtn === btn;
+      teishi();
+      if (!onaji) sousou(btn);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
